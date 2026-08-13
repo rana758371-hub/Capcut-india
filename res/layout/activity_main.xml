@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- ভিডিও প্লেয়ার প্রিভিউ -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:layout_centerInParent="true" />
+
+    <!-- মাঝখানে ভিডিও যুক্ত করার বাটন -->
+    <Button
+        android:id="@+id/btnPickVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="ভিডিও সিলেক্ট করুন"
+        android:backgroundTint="#FF0055"
+        android:textColor="#FFFFFF" />
+
+    <!-- নিচের টুলবার (এডিটিং অপশন) -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1E1E1E"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cut"
+            android:textColor="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filter"
+            android:textColor="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Text"
+            android:textColor="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Audio"
+            android:textColor="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
